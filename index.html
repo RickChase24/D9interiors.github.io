@@ -3,25 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Organization Name</title>
+    <title>Division 9 Interiors Inc</title>
     <style>
         body {
+            height: 100vh;
             font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            max-width: 900px;
+            display: flex;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            margin-top: 20px;
+        }
+        .left-section {
+            background-color: #333;
+            color: #fff;
+            padding: 40px 20px;
             text-align: center;
-            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 35%;
         }
-        h1 {
-            color: #2c3e50;
+        .left-section img {
+            width: 120px;
+            height: auto;
+            margin-bottom: 20px;
         }
-        p {
-            font-size: 18px;
-            color: #34495e;
+        .left-section h1 {
+            font-size: 1.8rem;
+            margin: 0;
+            color: #d1a653;
+        }
+        .contact-info {
+            margin-top: 20px;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: #ccc;
+        }
+        .right-section {
+            padding: 40px;
+            width: 65%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .right-section h2 {
+            color: #333;
+            font-size: 1.6rem;
+            margin-bottom: 20px;
+        }
+        .right-section p {
+            color: #666;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+        .footer {
+            margin-top: 20px;
+            text-align: center;
+            color: #333;
+            font-size: 0.875rem;
+        }
+        .footer p {
+            background-color: #d1a653;
+            padding: 10px;
+            border-radius: 4px;
+            color: #333;
+            margin: 0;
         }
     </style>
 </head>
 <body>
-<h1>Your Organization Name</h1>
-<p>We are currently under construction. Please check back soon!</p>
-<p>Contact us at: your-email@yourcompany.com</p>
+
+<div class="container">
+    <div class="left-section">
+        <img src="logo.png" alt="Division 9 Logo"> <!-- Replace logo.png with the actual logo file path -->
+        <h1>Division 9 Interiors Inc.</h1>
+        <div class="contact-info">
+            <p>527 Princeland Ct<br>Corona, CA 92879</p>
+            <p>(951) 405-4561</p>
+        </div>
+    </div>
+    <div class="right-section">
+        <h2>Quality and Service, Powered by Cutting-Edge Technology</h2>
+        <p>
+            Division 9 Interiors is a premier drywall and steel stud framing contractor specializing in large-scale multi-family and commercial construction projects.
+            With a commitment to precision, efficiency, and quality, we deliver tailored solutions that meet the unique needs of every project.
+        </p>
+    </div>
+</div>
+
+<div class="footer">
+    <p>Apologies for our appearance. Our website is currently under construction.</p>
+</div>
+
 </body>
 </html>
