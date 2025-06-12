@@ -6,7 +6,6 @@
     <title>Division 9 Interiors Inc</title>
     <style>
         body {
-            height: 100vh;
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
@@ -14,10 +13,12 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
+        }
+        .wrapper {
+            width: 990px;
         }
         .container {
-            max-width: 900px;
+            width: 100%;
             display: flex;
             background-color: #fff;
             border-radius: 8px;
@@ -44,7 +45,7 @@
         .left-section h1 {
             font-size: 1.8rem;
             margin: 0;
-            color: #d1a653;
+            color: #F0CA6A;
         }
         .contact-info {
             margin-top: 20px;
@@ -69,44 +70,62 @@
             font-size: 1rem;
             line-height: 1.6;
         }
-        .footer {
-            margin-top: 20px;
-            text-align: center;
-            color: #333;
-            font-size: 0.875rem;
+        .navigation {
+            width: 100%;
+           background-color: #333333;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            padding: 20px;
+
+            align-items: center;
         }
-        .footer p {
-            background-color: #d1a653;
-            padding: 10px;
-            border-radius: 4px;
-            color: #333;
-            margin: 0;
+        .links a {
+            color: #F0CA6A;
+            text-decoration: none;
+            margin-right: 20px;
+            font-weight: 500;
+        }
+        .links a:hover {
+            text-decoration: underline;
+        }
+        .feature strong {
+            color: #2c2c2c;
         }
     </style>
 </head>
 <body>
-
-<div class="container">
-    <div class="left-section">
-        <img src="logo.png" alt="Division 9 Logo"> <!-- Replace logo.png with the actual logo file path -->
-        <h1>Division 9 Interiors Inc.</h1>
-        <div class="contact-info">
-            <p>527 Princeland Ct<br>Corona, CA 92879</p>
-            <p>(951) 405-4561</p>
+<div class="navigation">
+    <div class="links">
+<!--        link to provacy policy-->
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+        <a href="support.html">Support</a>
+    </div>
+</div>
+<div class="wrapper">
+    <div class="container">
+        <div class="left-section">
+            <img src="logo.png" alt="Division 9 Logo">
+            <h1>Division 9 Interiors Inc.</h1>
+            <div class="contact-info">
+                <p>527 Princeland Ct<br>Corona, CA 92879</p>
+                <p>(951) 405-4561</p>
+            </div>
+        </div>
+        <div class="right-section">
+            <h2>Quality and Service, Powered by Cutting-Edge Technology</h2>
+            <p>
+                Division 9 Interiors is a premier drywall and steel stud framing contractor specializing in large-scale multi-family and commercial construction projects.
+                With a commitment to precision, efficiency, and quality, we deliver tailored solutions that meet the unique needs of every project.
+            </p>
         </div>
     </div>
-    <div class="right-section">
-        <h2>Quality and Service, Powered by Cutting-Edge Technology</h2>
-        <p>
-            Division 9 Interiors is a premier drywall and steel stud framing contractor specializing in large-scale multi-family and commercial construction projects.
-            With a commitment to precision, efficiency, and quality, we deliver tailored solutions that meet the unique needs of every project.
-        </p>
-    </div>
 </div>
 
-<div class="footer">
-    <p>Apologies for our appearance. Our website is currently under construction.</p>
-</div>
+<!--<div class="footer">-->
+<!--    <p>Apologies for our appearance. Our website is currently under construction.</p>-->
+<!--</div>-->
 
 </body>
 </html>
